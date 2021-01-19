@@ -1,0 +1,3 @@
+User-agent: Googlebot
+User-agent: Yandex
+Allow: http://web-meg.ru/index.html
