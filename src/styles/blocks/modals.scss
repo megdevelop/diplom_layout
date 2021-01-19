@@ -1,0 +1,242 @@
+.modals {
+	position: fixed;
+	z-index: 3;
+
+	.modals__modal-overlay {
+		position: fixed;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-color: rgba(0, 0, 0, 0.7);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 100vh;
+		width: 100%;
+		opacity: 0;
+		visibility: hidden;
+		transition: all 0.2s ease-in-out;
+
+		&.modals__modal-overlay_visible {
+			opacity: 1;
+			visibility: visible;
+			transition: all 0.2s ease-in-out;
+			z-index: 11;
+		}
+	}
+
+	.modals__btn-close {
+		width: 45px;
+		height: 40px;
+		cursor: pointer;
+		background: transparent;
+		position: relative;
+		left: 431px;
+		border: none;
+		z-index: 12;
+
+		@media (max-width: 1024px) {
+			left: 200px;
+			top: -10px;
+		}
+	}
+
+	.modals__modal {
+		position: fixed;
+		background: linear-gradient(18deg, #ff8f5a, #ff2f96);
+		width: 500px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		display: none;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		padding: 15px;
+		border-radius: 15px;
+		z-index: 15;
+
+		@media (max-width: 1024px) {
+			width: 260px;
+		}
+
+		&.modals__modal_info {
+			background: #ff4e2e;
+		}
+	}
+
+	.form {
+		position: relative;
+		top: -25px;
+		display: flex;
+		flex-direction: column;
+
+		&.form_info :nth-child(6) {
+			margin-bottom: 42px !important;
+
+			@media (max-width: 1024px) {
+				margin-bottom: 25px !important;
+			}
+		}
+
+		.form__text {
+		font-size: 30px;
+		color: #fff;
+		margin-top: 0;
+		margin-bottom: 10px;
+
+		@media (max-width: 1024px) {
+			font-size: 20px;
+		}
+
+			&.form__text_info {
+				margin-bottom: 10px;
+			}
+		}
+
+		.form__input {
+			line-height: 40px;
+	    	border: none;
+	    	font-size: 30px;
+	    	margin-bottom: 20px;
+			text-align: center;
+			
+			@media (max-width: 1024px) {
+				line-height: 45px;
+				font-size: 20px;
+				margin-bottom: 20px;
+			}
+		}
+		
+		.form__policy {
+			margin-bottom: 20px;
+
+			.label-checkbox {
+				display: inline-block; /* Строчно-блочный элемент */
+				position: relative; /* Относительное позиционирование */
+				width: 60px; height: 30px; /* Размеры прямоугольника */
+				background: #8993ad; /* Серый цвет фона */
+				transition: 0.2s; /* Время смены цвета фона */
+
+				@media (min-width: 1024px) {
+					margin-right: 6px;
+				}
+
+				&:focus {
+					border: 1px #000000;
+				}
+			   }
+
+			   .label-checkbox::before {
+				content: '';
+				position: absolute; /* Абсолютное позиционирование */
+				background: #fff; /* Цвет фона квадратика */
+				width: 20px; height: 20px; /* Размеры квадратика */
+				left: 35px; top: 5px; /* Положение квадратика */
+				transition: 0.2s; /* Время движения квадратика */
+			   } 
+
+			   input:checked + .label-checkbox {
+				background: #fff; /* Синий цвет фона */
+			   }
+
+			   input:checked + .label-checkbox::before {
+				background: linear-gradient(18deg, #ff8f5a, #ff2f96); /* Цвет фона квадратика */
+				left: 5px; /* Квадратик слева */
+			   }
+
+			.form__policy-text {
+				color: #ffffff;
+				font-size: 19px;
+
+				@media (min-width: 1024px) {
+					font-size: 26px;
+				}
+			}
+
+			.form__policy-link {
+				text-decoration: underline;
+			}
+		}
+
+	    .form__submit {
+	    	width: 310px;
+	    	height: 75px;
+	    	background: linear-gradient(-100deg, #ff8f5a, #ff2f96);
+	    	align-self: center;
+	    	border: #fff;
+    		font-size: 30px;
+    		color: #fff;
+			border-radius: 15px;
+
+			&:hover {
+				cursor: pointer;
+			}
+
+			&[disabled] {
+				opacity: .6;
+				cursor: not-allowed;
+			}
+			
+			@media (max-width: 1024px) {
+				width: 185px;
+				height: 50px;
+				font-size: 20px;;
+			}
+
+    		&.form__submit_info {
+    			width: 300px;
+    			height: 65px;
+    			background: #fff;
+    			color: #ff4e2e;
+				font-weight: bold;
+				
+				@media (max-width: 1024px) {
+					width: 200px;
+   					height: 50px;
+				}
+    		}
+	    }
+	}
+
+	.btn-close__lines {
+		background: transparent;
+
+		&::after {
+			content: "";
+			width: 45px;
+			height: 6px;
+			position: absolute;
+			top: 17px;
+			left: 0;
+			transform: rotate(-45deg);
+			background: #fff;
+			transition-delay: 0s, 0.2s;
+			border-radius: 10px;
+			cursor: pointer;
+
+			@media (max-width: 1024px) {
+				width: 30px;
+			}
+		}
+
+		&::before {
+			content: "";
+			width: 45px;
+			height: 6px;
+			position: absolute;
+			top: 17px;
+			left: 0;
+			transform: rotate(45deg);
+			transition-delay: 0s, 0.2s;
+			background: #fff;
+			border-radius: 10px;
+			cursor: pointer;
+
+			@media (max-width: 1024px) {
+				width: 30px;
+			}
+		}
+	}
+}

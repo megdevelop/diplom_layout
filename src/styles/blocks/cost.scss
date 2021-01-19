@@ -1,0 +1,47 @@
+.cost {
+	padding-top: 76px;
+	padding-bottom: 89px;
+	background: linear-gradient(18deg, #ff8f5a, #ff2f96);
+	color: #ffffff;
+	
+	@media (max-width: 1200px) {
+	  padding-top: 76px;
+		padding-bottom: 87px;
+	}
+	
+	@media (max-width: 1024px) {
+	  padding-top: 39px;
+    padding-bottom: 38px;
+	}
+	
+	.cost__container {
+		padding-left: 114px;
+		
+		@media (max-width: 1200px) {
+		  padding-left: 0;
+		}
+		
+		.cost__title {
+  		margin-top: 0;
+  		margin-bottom: 29px;
+  		font-size: 45px;
+  		font-weight: bold;
+  		line-height: 58px;
+  		
+  		@media (max-width: 1024px) {
+  		  font-size: 28px;
+	    	line-height: 41px;
+  		}
+	  }
+	  
+	  .cost__note {
+  		margin: 0;
+  		font-size: 23px;
+  		
+  		@media (max-width: 1024px) {
+  		  font-size: 19px;
+	    	line-height: 29px;
+  		}
+	  }
+	}
+}

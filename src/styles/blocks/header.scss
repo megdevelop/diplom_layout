@@ -1,0 +1,36 @@
+.header {
+	padding-top: 29px;
+	background-color: #fbfbfb;
+	
+	.header__top-line {
+		position: relative;
+	  	display: flex;
+	  	justify-content: space-between;
+	  	align-items: center;
+  }
+	
+	.header__telephone {
+	  margin-right: 27px;
+	  
+	  @media (max-width: 1024px) {
+	    margin-right: 36px;
+			font-size: 18px;
+	  }
+	}
+	
+	.header__btn {
+		width: 207px;
+		height: 45px;
+		
+		@media (max-width: 1024px) {
+		    height: 26px;
+	    	width: 26px;
+	    	font-size: 0;
+	    	border-radius: 15px;
+			background: url("../img/sprite.svg#phone"); 
+			background-repeat: no-repeat;
+			background-size: 65%;
+	    	background-position: center;
+		}
+	}
+}

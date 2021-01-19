@@ -1,0 +1,34 @@
+.check {
+
+    &__box {
+        position: absolute;
+        width: 60px;
+        height: 30px;
+        left: 0;
+        background: #8993ad;
+        transition: 0.2s;
+
+        &:focus {
+            border: 1px #000000;
+        }
+
+        &:before {
+            content: '';
+            position: absolute; /* Абсолютное позиционирование */
+            background: #fff; /* Цвет фона квадратика */
+            width: 20px; height: 20px; /* Размеры квадратика */
+            left: 35px; top: 5px; /* Положение квадратика */
+            transition: 0.2s; /* Время движения квадратика */
+            z-index: 1;
+        }
+    }
+
+    & input:checked + .check__box {
+        background: #fff;
+    }
+
+    & input:checked + .check__box:before {
+        background: linear-gradient(18deg, #ff8f5a, #ff2f96); /* Цвет фона квадратика */
+        left: 5px; /* Квадратик слева */
+    }
+}

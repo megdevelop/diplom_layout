@@ -1,0 +1,67 @@
+.about {
+		max-width: 745px;
+		
+		@media (max-width: 1200px) {
+		  max-width: 520px;
+		}
+		
+		@media (max-width: 1024px) {
+			text-align: center;
+			max-width: 320px;
+			margin: 0 auto;
+			padding: 10px 0;
+		}
+		
+		.about__headline {
+			margin-top: 0;
+			margin-bottom: 65px;
+			display: flex;
+			flex-direction: column;
+			
+			@media (max-width: 1024px) {
+			  margin-bottom: 20px;
+			}
+		}
+		
+		.about__name {
+				margin-bottom: 15px;
+				font-size: 80px;
+				font-weight: 900;
+				
+				@media (max-width: 1200px) {
+				  margin-bottom: 24px;
+				  font-size: 53px;
+				}
+				
+				@media (max-width: 1024px) {
+					font-size: 30px;
+					margin-bottom: 7px;
+				}
+			}
+			
+			.about__specialization {
+				font-size: 25px;
+				font-weight: normal;
+				color: $tpl_color;
+				
+				@media (max-width: 1024px) {
+					padding: 0 5px;
+					font-size: 16px;
+					line-height: 23px;
+				}
+			}
+			
+			.about__main-link {
+			padding: 20px 72px;
+			
+			@media (max-width: 1200px) {
+			  padding: 24px 97px;
+			}
+			
+			@media (max-width: 1024px) {
+				padding: 18px 82px;
+				line-height: 66px;
+				letter-spacing: 0;
+			}
+		}
+	}

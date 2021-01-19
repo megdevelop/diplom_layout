@@ -1,0 +1,29 @@
+.connect {
+	padding-right: 23px;
+			
+	@media (max-width: 1200px) {
+		padding-right: 0px;
+	}
+			
+	.connect__btn {
+		width: 250px;
+		height: 44px;
+		margin-bottom: 33px;
+				
+		@media (max-width: 1024px) {
+			margin-bottom: 47px;
+			width: 280px;
+			height: 55px;
+			color: #ffffff;
+			background-color: #ff4e2e;
+			border: none;
+
+		&.neon-btn:hover {
+			background-color: #fff;
+			box-shadow: 0 0 10px #ff4e2e, 0 0 40px #ff4e2e, 0 0 80px #ff4e2e;
+			border: 1px solid #ff4e2e;
+			color: #ff4e2e;
+		}
+		}
+	}
+}

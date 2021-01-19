@@ -1,0 +1,10 @@
+.main {
+
+  .main__headline {
+		font-size: 54px;
+		
+		@media (max-width: 1024px) {
+		  font-size: 30px;
+		}
+	}
+}

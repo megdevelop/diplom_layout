@@ -1,0 +1,13 @@
+.canvas-ellipse {
+	display: none;
+		
+	@media (max-width: 1200px) {
+		display: block;
+		margin-top: -373px;
+	    margin-left: 409px;
+	}
+		
+	@media (max-width: 1024px) {
+		display: none;
+	}
+}

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Диплом</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.min.css">
+	<link rel="preload" href="fonts/roboto-v20-cyrillic_latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="fonts/roboto-v20-cyrillic_latin-700.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="fonts/roboto-v20-cyrillic_latin-900.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta name="description" content="Дипломная работа">
+</head>
+
+<body>
+	<header class="header">
+		<div class="fixed-container header__top-line js-menu">
+			<div class="burger-menu js-burger-menu">
+				<button type="button" class="burger-menu__button js-burger-menu__button">
+					<span class="burger-menu__lines"></span>
+				</button>
+
+				<div class="burger-menu__overlay js-burger-menu__overlay"></div>
+			</div>
+
+			<nav class="navigation inline-nav js-inline-nav" id="header-nav">
+				<ul class="navigation__list inline-nav__list">
+					<li class="navigation__item inline-nav__item">
+						<a href="#service" class="inline-nav__link js-inline-nav__link js-nav-link" id="nav-link-1">Услуги</a>
+					</li>
+
+					<li class="navigation__item inline-nav__item">
+						<a href="#examples-headline" class="inline-nav__link js-inline-nav__link js-nav-link">Портфолио</a>
+					</li>
+
+					<li class="navigation__item inline-nav__item">
+						<a href="#cost" class="inline-nav__link js-inline-nav__link js-nav-link">Стоимость</a>
+					</li>
+				</ul>
+			</nav>
+
+			<div class="call">
+				<a href="tel:+7(499)995-55-77" class="telephone header__telephone">
+					<b>+7 (499) 995-55-77</b>
+				</a>
+
+				<button type="button" value="Заказать звонок" class="btn header__btn neon-btn js-btn js-btn_small" data-path="one">Заказать звонок
+
+					<span class="neon-btn__decorate neon-btn__decorate--one" aria-hidden="true"></span>
+					<span class="neon-btn__decorate neon-btn__decorate--two" aria-hidden="true"></span>
+					<span class="neon-btn__decorate neon-btn__decorate--three" aria-hidden="true"></span>
+					<span class="neon-btn__decorate neon-btn__decorate--four" aria-hidden="true"></span>
+				</button>
+			</div>	
+		</div>
+	</header>
+
+	<main class="main">
+		<section class="info">
+			<div class="fixed-container info__fixed-container">
+				<div class="info__symbol-item info__symbol-item_move1">{ }</div>
+
+				<div class="info__symbol-item info__symbol-item_move2">#</div>
+
+				<div class="info__symbol-item info__symbol-item_move3">&lt;/&gt;</div>
+
+				<div class="info__symbol-item info__symbol-item_move4">&lt;div&gt;</div>
+
+				<div class="info__symbol-item info__symbol-item_move5">&lt;div&gt;</div>
+			</div>
+		
+			<div class="fixed-container info__container">
+				<div class="about">
+					<h1 class="about__headline">
+						<span class="about__name">Дмитрий Алексеев</span>
+
+						<span class="about__specialization">Frontend-разработчик и веб-верстальщик</span>
+					</h1>
+
+					<a href="#service-headline" class="main-link about__main-link btn js-nav-link">Узнать больше</a>
+				</div>
+			</div>
+
+				<div class="fixed-container info__img-box">
+
+					<picture>
+						<source media="(min-width: 1201px)" type="image/webp" srcset="img/photo.webp 1x, img/photo@2x.webp 2x">
+
+						<source media="(min-width: 1024px)" type="image/webp" srcset="img/photo1024px.webp 1x, img/photo1024px@2x.webp 2x">
+
+						<source type="image/webp" sizes="224px" srcset="img/photo320px.webp 1x, img/photo320px@2x.webp 2x">
+
+						<source media="(min-width: 1201px)" srcset="img/photo.png 1x, img/photo@2x.png 2x">
+
+						<source media="(min-width: 1024px)" srcset="img/photo1024px.png 1x, img/photo1024px@2x.png 2x">
+
+						<img src="img/photo320px.png"
+							srcset="img/photo320px@2x.png 2x"
+							sizes="(min-width: 1201px) 1033px,
+									(min-width: 1024px) 735px,
+									224px"
+							class="info__photo"
+							alt="Главное фото">
+					</picture>	
+				</div>
+		</section>
+
+		<section class="service" id="service">
+			<div class="fixed-container">
+				<h2 class="main__headline service__headline" id="service-headline">Что я делаю</h2>
+
+				<ul class="service__list">
+					<li class="service__item service__item_web">
+						<p class="service__text">Вёрстка лендинг&ndash;страниц<br>и сайтов любой сложности</p>
+					</li>
+
+					<li class="service__item service__item_responsive">
+						<p class="service__text">Адаптивная вёрстка под все<br>браузеры и устройства</p>
+					</li>
+
+					<li class="service__item service__item_programming">
+						<p class="service__text">Frontend&ndash;разработка<br>и программирование</p>
+					</li>
+
+					<li class="service__item service__item_coding">
+						<p class="service__text">Исправление и доработка<br>существующей вёрстки</p>
+					</li>
+				</ul>
+
+				<button type="button" class="main-link service__main-link btn js-btn" data-path="three">Узнать стоимость</button>
+			</div>
+		</section>
+
+		<section class="examples">
+			<div class="fixed-container">
+				<h2 class="main__headline examples__headline" id="examples-headline">Примеры моих работ</h2>
+
+				<div class="slider-container">
+					<div class="swiper-container js-swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide card">
+								<picture>
+									<source media="(min-width: 1201px)" type="image/webp" srcset="img/Layer_2.webp, img/Layer_2@2x.webp 2x">
+
+									<source type="image/webp" sizes="455px" srcset="img/Layer-2-1024px.webp, img/Layer-2-1024px@2x.webp 2x">
+		
+									<source media="(min-width: 1201px)" srcset="img/Layer_2.png, img/Layer_2@2x.png 2x">
+		
+									<img src="img/Layer-2-1024px.png"
+										srcset="img/Layer-2-1024px@2x.png 2x"
+										sizes="(min-width: 1201px) 370px,
+												455px"
+										class="examples__photo"
+										alt="Сайт психолога Веры Антоновой">
+								</picture>
+
+								<a href="/" class="examples__link examples__link_psychologist">Сайт психолога Веры Антоновой</a>
+							</div>
+
+							<div class="swiper-slide card">
+								<picture>
+		
+									<source media="(min-width: 1201px)" type="image/webp" srcset="img/Layer_1.webp, img/Layer_1@2x.webp 2x">
+
+									<source media="(min-width: 1024px)" type="image/webp" srcset="img/Layer-1-1024px.webp, img/Layer-1-1024px@2x.webp 2x">
+
+									<source type="image/webp" sizes="280px" srcset="img/Layer-1-mobile.webp, img/Layer-1-mobile@2x.webp 2x">
+		
+									<source media="(min-width: 1201px)" srcset="img/Layer_1.png, img/Layer_1@2x.png 2x">
+
+									<source media="(min-width: 1024px)" srcset="img/Layer-1-1024px.png, img/Layer-1-1024px@2x.png 2x">
+	
+									<img src="img/Layer-1-mobile.png"
+										srcset="img/Layer-1-mobile@2x.png 2x"
+										sizes="(min-width: 1201px) 370px,
+												(min-width: 1024px) 455px,
+												280px"
+										class="examples__photo"
+										alt="Сайт магазина детской одежды">
+								</picture>
+
+								<a href="/" class="examples__link examples__link_clothes">Сайт магазина детской одежды</a>
+							</div>
+
+							<div class="swiper-slide card">
+								<picture>
+									<source type="image/webp" sizes="370" srcset="img/Layer_3.webp, img/Layer_3@2x.webp 2x">
+		
+									<img src="img/Layer_3.png"
+										srcset="img/Layer_3@2x.png 2x"
+										sizes="370px"
+										class="examples__photo examples__photo_fish"
+										alt="Сайт магазина «Рыболов»">
+								</picture>
+
+								<a href="/" class="examples__link examples__link_fish">Сайт магазина «Рыболов»</a>
+							</div>
+						</div>
+							<div class="swiper-pagination js-swiper-pagination"></div>
+					</div>
+						<button type="button" class="swiper-button-prev js-swiper-button-prev"></button>
+						<button type="button" class="swiper-button-next js-swiper-button-next"></button>
+				</div>
+
+				<button type="button" value="Заказать проект" class="main-link examples__main-link btn js-btn" data-path="four">Заказать проект</button>
+			</div>
+		</section>
+
+		<section class="cost" id="cost">
+			<h2 class="visually-hidden">Цены</h2>
+
+			<div class="fixed-container">
+				<div class="cost__container">
+					<p class="cost__title" id="cost-title">Адаптивная вёрстка под все устройства и&nbsp;браузеры&nbsp;от&nbsp;1000 рублей всего за&nbsp;4&nbsp;часа.*</p>
+
+					<p class="cost__note">
+						<small class="cost__note_text">* Срок и стоимость могут отличаться от заявленных и рассчитываются индивидуально, в&nbsp;зависимости от&nbsp;сложности&nbsp;задач.</small>
+					</p>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="fixed-container footer__container">
+				<ul class="navigation__list column-nav">
+					<li class="navigation__item column-nav__item">
+						<a href="#service" class="js-nav-link">Услуги</a>
+					</li>
+
+					<li class="navigation__item column-nav__item">
+						<a href="#examples-headline" class="js-nav-link">Портфолио</a>
+					</li>
+
+					<li class="navigation__item column-nav__item">
+						<a href="#cost" class="js-nav-link">Стоимость</a>
+					</li>
+				</ul>
+
+			<address class="contacts">
+				<ul class="contacts__list">
+					<li class="contacts__item">
+						<a href="tel:+7(499)995-77-55" class="contacts__telephone">+7 (499) 995-77-55</a>
+					</li>
+
+					<li class="contacts__item">
+						<a href="mailto:dmitry@alekseev.com" class="contacts__envelope">dmitry@alekseev.com</a>
+					</li>
+				</ul>
+			</address>
+
+			<div class="connect">
+				<button type="button" value="Заказать звонок" class="btn connect__btn neon-btn js-btn js-btn_small" data-path="one">Заказать звонок
+
+					<span class="neon-btn__decorate neon-btn__decorate--one" aria-hidden="true"></span>
+					<span class="neon-btn__decorate neon-btn__decorate--two" aria-hidden="true"></span>
+					<span class="neon-btn__decorate neon-btn__decorate--three" aria-hidden="true"></span>
+					<span class="neon-btn__decorate neon-btn__decorate--four" aria-hidden="true"></span>
+				</button>
+
+				<ul class="social-networks connect__list">
+					<li class="social-networks__item">
+						<a href=" https://vk.com/" class="social-networks__vk" target="_blank" aria-label="Вконтакте">
+							<svg class="social-networks__icon social-networks__icon_vk">
+								<use xlink:href="img/sprite.svg#vk"></use>
+							</svg>
+						</a>
+					</li>
+
+					<li class="social-networks__item">
+						<a href=" https://facebook.com/" class="social-networks__facebook" target="_blank" aria-label="Facebook">
+							<svg class="social-networks__icon social-networks__icon_facebook">
+								<use xlink:href="img/sprite.svg#facebook"></use>
+							</svg>
+						</a>
+					</li>
+
+					<li class="social-networks__item">
+						<a href=" https://twitter.com/" class="social-networks__twitter" target="_blank" aria-label="Twitter">
+							<svg class="social-networks__icon social-networks__icon_twitter">
+								<use xlink:href="img/sprite.svg#twitter"></use>
+							</svg>
+						</a>
+					</li>
+
+					<li class="social-networks__item">
+						<a href=" https://instagram.com/" class="social-networks__instagram" target="_blank" aria-label="Instagram">
+							<svg class="social-networks__icon social-networks__icon_instagram">
+								<use xlink:href="img/sprite.svg#instagram"></use>
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<p class="copyright">&copy; Дмитрий Алексеев, 2016 &ndash; 2018</p>
+	</footer>
+
+	<div class="modals">
+		<div class="modals__modal-overlay js-modals__modal-overlay"></div>
+
+		<div class="modals__modal js-modals__modal" data-target="one">
+			<button type="button" value="Закрыть" class="btn-close modals__btn-close">
+				<span class="btn-close__lines js-btn-close__lines"></span>
+			</button>
+			
+			<form action="telegram.php" method="POST" name="Заказ звонка" class="form">
+				<label class="form__text">Введите Ваше имя:</label>
+				<input type="text" name="Имя" size="26" class="form__input" placeholder="Введите имя" required="">
+
+				<label class="form__text">Введите Ваш телефон:</label>
+				<input type="tel" name="Телефон" size="26" class="form__input" placeholder="Введите телефон" required="">
+
+				<label class="form__text js-form__text-min">Введите Ваш e-mail:</label>
+				<input type="email" name="e-mail" size="26" class="form__input js-form__input-min" placeholder="e-mail@email.com" required="">
+
+				<div class="form__policy">
+					<label class="check option js-checkbox">
+						<input class="visually-hidden" type="checkbox">
+						<span class="check__box"></span>
+						Я ознакомлен и согласен с <a href="http://web-meg.ru/privacy.pdf" class="form__policy-link">Политикой конфиденциальности</a>
+					</label>
+				</div>
+
+				<input type="submit" value="Заказать звонок" class="form__submit js-form__submit" id="submit" disabled="disabled">
+			</form>
+		</div>
+	</div>
+
+	<script src="js/scripts.js"></script>
+</body>
+</html>

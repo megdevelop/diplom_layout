@@ -1,0 +1,15 @@
+.main-link {
+	color: #ffffff;
+	text-align: center;
+	background-color: #ff4e2e;
+	border: 1px solid #ff4e2e;
+	letter-spacing: 1px;
+	cursor: pointer;
+	transition: 0.2s;
+
+	&:hover {
+		background-color: #fff;
+		color: #ff4e2e;
+		transition: 0.2s;
+	}
+}

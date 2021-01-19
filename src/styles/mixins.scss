@@ -1,0 +1,6 @@
+@mixin symbol($left,$top,$transform,$animation){
+	left: $left;
+    top: $top;
+	transform: $transform;
+	animation: $animation;
+}

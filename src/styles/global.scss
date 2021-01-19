@@ -1,0 +1,37 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	min-width: 320px;
+	margin: 0;
+	background-color: #ffffff;
+	font-family: "Roboto", "Arial", "Helvetica", sans-serif;
+	font-size: 16px;
+	line-height: normal;
+	color: #000000;
+	overflow-x: hidden;
+}
+
+img {
+	max-width: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}

@@ -1,0 +1,12 @@
+.option {
+    position: relative;
+    display: block;
+    margin-bottom: 5px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 19px;
+
+    @media (min-width: 1024px) {
+        font-size: 26px;
+    }
+}

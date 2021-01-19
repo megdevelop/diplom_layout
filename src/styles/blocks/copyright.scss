@@ -1,0 +1,19 @@
+.copyright {
+	margin: 71px 0 0 0;
+	padding-top: 30px;
+	padding-bottom: 32px;
+	text-align: center;
+	color: #FFFFFF;
+	background-color: #31293c;
+
+	@media (max-width: 1200px) {
+		margin: 69px 0 0;
+	}
+	
+	@media (max-width: 1024px) {
+		margin: 43px 0 0;
+		padding-top: 18px;
+		padding-bottom: 18px;
+		font-size: 12px;
+	}
+}
